@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ebenca Mohlala</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    
+    <main>
+        <section class="about-section">
+            <div class="about-content">
+                <div class="profile-pic">
+                    <img src="WhatsApp Image 2024-08-12 at 12.34.56_3b82af2d.jpg" alt="Ebenca Mohlala Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h2>Ebenca Mohlala</h2>
+                    <p>Hi, I'm Ebenca Mohlala, a passionate web developer, boxer, and bodybuilder. I live in Soshanguve, Pretoria, and I am currently pursuing a Diploma in Information Technology at Richfield. At 24, I balance a professional career in boxing and bodybuilding with my love for technology and coding.</p>
+                    <p>My journey started with a love for building things, from crafting sleek, functional websites for personal brands and businesses to developing innovative digital solutions. Outside of tech, I enjoy lifting weights and staying in peak physical condition, which has led me to professional bodybuilding and boxing.</p>
+                    <p>With a background in business communication, networks, and web technology, I aim to combine these skills to provide top-notch web development services while pursuing my goals as a fitness and sports professional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests-section">
+            <h2>My Interests</h2>
+            <div class="interests-content">
+                <div class="interest-item">
+                    <img src="402264824_1374378660126422_7888715452634890293_n.jpg" alt="Boxing">
+                    <h3>Boxing</h3>
+                    <p>As a professional boxer, I love the discipline and intensity of the sport. Boxing teaches focus, resilience, and the will to push past limits.</p>
+                </div>
+                <div class="interest-item">
+                    <img src="69847083_375571110007187_1457265794894266368_n.jpg" alt="Bodybuilding">
+                    <h3>Bodybuilding</h3>
+                    <p>Bodybuilding is a key part of my lifestyle. It allows me to challenge myself physically and mentally, ensuring I stay in peak form both in the ring and in life.</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow me on social media:</p>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/?ref=homescreenpwa&_rdc=1&_rdr" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            
+            </a>
+            <a href="https://www.instagram.com/codingwithbenca/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+     
+            </a>
+        </div>
+    </footer>
+	
+</body>
+</html>
+<style>
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #60a5fa);
+    color: #f9fafb;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    backdrop-filter: blur(8px);
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Glowing effect */
+}
+
+.profile-pic img:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.9); /* Stronger glow on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.about-text h2 {
+    color: #ff61a6;
+}
+
+.about-text p {
+    text-align: justify;
+}
+
+/* Interests Section */
+.interests-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.interests-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.interest-item {
+    width: 30%;
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Initial glowing effect */
+}
+
+.interest-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Subtle glow */
+}
+
+.interest-item img:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.6); /* Glow on hover */
+    transform: scale(1.05); /* Zoom effect */
+}
+
+.interest-item h3 {
+    color: #60a5fa;
+}
+
+.interest-item p {
+    color: #f9fafb;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    font-size: 1.8em;
+    margin: 0 15px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff61a6;
+    transform: scale(1.2); /* Scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .interests-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interest-item {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
+
+
+
+
+</style>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Ebenca Mohlala</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Services</h1>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <h2>What I Offer</h2>
+            <p>I bring together a passion for technology, fitness, and personal growth. Below are the services I offer in web development, fitness coaching, and personal training.</p>
+            <div class="services-content">
+                <!-- Web Development Service -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>From sleek websites to dynamic e-commerce platforms, I build responsive and visually appealing websites tailored to your business goals. My expertise spans from HTML, CSS, JavaScript to complex backend systems.</p>
+                </div>
+
+                <!-- UI/UX Design Service -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>I design intuitive and engaging user interfaces that are not only visually stunning but also enhance user experience. My designs focus on usability, functionality, and creating memorable user journeys.</p>
+                </div>
+
+                <!-- Fitness Coaching Service -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness Coaching</h3>
+                    <p>With years of experience in bodybuilding and professional boxing, I offer personalized fitness programs that cater to your body goals. Whether you're looking to bulk up, tone down, or stay fit, I can help you achieve it.</p>
+                </div>
+
+                <!-- Boxing Training Service -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-boxing-glove"></i>
+                    </div>
+                    <h3>Boxing Training</h3>
+                    <p>As a professional boxer, I provide one-on-one boxing training that focuses on technique, strength, and stamina. Boxing is a great way to improve both physical fitness and mental resilience.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow me on social media:</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/ebenca" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/ebenca" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/ebenca" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/company/ebenca" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+  /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #60a5fa);
+    color: #f9fafb;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out; /* Fading animation on page load */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 1.5em 1em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: slideDown 1.2s ease-in-out; /* Slide down effect */
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Main Section: Contact Info */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Contact Details Animations */
+.contact-info h2, .contact-details h3, .contact-details p {
+    opacity: 0;
+    animation: fadeInLeft 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInLeft {
+    0% { transform: translateX(-30px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.contact-details p a {
+    color: #f9fafb;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-details p a:hover {
+    color: #ff61a6;
+    text-decoration: underline;
+}
+
+/* Social Icons Animation */
+.social-icons a {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff61a6;
+    transform: scale(1.2); /* Slight scale-up on hover */
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    animation: fadeInUp 2s ease;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #60a5fa;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff61a6;
+    outline: none;
+}
+
+/* CTA Buttons */
+.cta-button {
+    background: #ff61a6;
+    color: #000;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background: #e63946;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5em;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}

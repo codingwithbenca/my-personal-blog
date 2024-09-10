@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Ebenca Mohlala</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Client Testimonials</h1>
+    </header>
+
+    <main>
+        <section class="testimonials-section">
+            <h2>What People Say About Me</h2>
+            <p>Here are some of the experiences and feedback shared by my clients and collaborators. I’m proud to have made an impact on their projects and fitness journeys.</p>
+
+            <div class="testimonials-content">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Ebenca is a fantastic web developer! He took my business website to a whole new level. His ability to bring ideas to life in a visually appealing and functional way is amazing!"</p>
+                    <h3>John Doe</h3>
+                    <span>CEO, Tech Innovators</span>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"I've been training with Ebenca for over a year now, and the transformation is incredible. His workout plans are tough but rewarding, and his dedication is unmatched!"</p>
+                    <h3>Jane Smith</h3>
+                    <span>Fitness Enthusiast</span>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"I hired Ebenca for a complete redesign of my brand’s website, and I couldn’t be happier. The UI/UX improvements have driven more traffic and engagement. Highly recommend!"</p>
+                    <h3>Sarah Lee</h3>
+                    <span>Marketing Director, BrandX</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow me on social media:</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/ebenca" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/ebenca" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/ebenca" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/company/ebenca" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+  /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #60a5fa);
+    color: #f9fafb;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out; /* Fading animation on page load */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 1.5em 1em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: slideDown 1.2s ease-in-out; /* Slide down effect */
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Main Section: Contact Info */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Contact Details Animations */
+.contact-info h2, .contact-details h3, .contact-details p {
+    opacity: 0;
+    animation: fadeInLeft 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInLeft {
+    0% { transform: translateX(-30px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.contact-details p a {
+    color: #f9fafb;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-details p a:hover {
+    color: #ff61a6;
+    text-decoration: underline;
+}
+
+/* Social Icons Animation */
+.social-icons a {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff61a6;
+    transform: scale(1.2); /* Slight scale-up on hover */
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    animation: fadeInUp 2s ease;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #60a5fa;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff61a6;
+    outline: none;
+}
+
+/* CTA Buttons */
+.cta-button {
+    background: #ff61a6;
+    color: #000;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background: #e63946;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5em;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
+</style>
